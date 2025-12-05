@@ -16,8 +16,8 @@ from sklearn.impute import SimpleImputer, IterativeImputer
 import joblib
 
 # Loading the train and test data into dataframes
-titanic_train_df = pd.read_csv('DataSet/train.csv')
-titanic_test_df = pd.read_csv('DataSet/test.csv')
+titanic_train_df = pd.read_csv('../DataSet/train.csv')
+titanic_test_df = pd.read_csv('../DataSet/test.csv')
 
 print("Train and Test Data Loaded Successfully")
 
@@ -39,6 +39,7 @@ print("Data preprocessing or Impuation Completed Successfully")
 numerical_features = ['SibSp','Parch', 'Survived', 'Fare_log']
 categorical_features = ['Sex', 'Cabin_class', 'Is_alone']
 numerical_cols_without_survived = ['Parch', 'Fare']
+all_model_features = numerical_cols_without_survived + categorical_features
 
 print("Independent Features extracted manually from the dataset")
 
@@ -103,12 +104,26 @@ print(confusion_matrix(train_y, train_pred))
 print('*************TEST***************')
 print(confusion_matrix(test_y, test_pred))
 
+test_accuracy = accuracy_score(test_y, test_pred)
+print(f"Test Accuracy: {test_accuracy}")
+
+test_recall = classification_report(test_y, test_pred, output_dict=True)['1']['recall']
+print(f"Test Recall: {test_recall}")
+
+test_precision = classification_report(test_y, test_pred, output_dict=True)['1']['precision']
+print(f"Test Precision: {test_precision}")
+
+test_f1_score = classification_report(test_y, test_pred, output_dict=True)['1']['f1-score']
+print(f"Test F1 Score: {test_f1_score}")
+
+print(all_model_features)
+
 test_pred_on_unseen_data = model_pipeline.predict(titanic_test_df[numerical_cols_without_survived + categorical_features])
 
 print("Prediction on unseen test data completed successfully")
 
 # Save the model pipeline to a file
 
-joblib.dump(model_pipeline, 'titanic_model_pipeline.pkl')
+joblib.dump(model_pipeline, '../model/titanic_model_pipeline.pkl')
 
 print("Model Pipeline saved successfully as titanic_model_pipeline.pkl")
