@@ -1,0 +1,28 @@
+06-Dec-2025:
+
+Session Summary - Decision Trees
+
+Topics Covered:
+Kahoot quiz recap on imbalanced data & sampling techniques
+Introduction to Decision Tree algorithms - structure, logic & differences from linear models
+Gini Index & impurity calculations for classification
+Handling categorical vs continuous variables in decision trees
+Practical implementation on automobile dataset
+Model comparison: Decision Tree (F1: 0.65) vs Logistic Regression (F1: 0.34)
+Decision tree visualization using Graphviz
+Confusion matrix interpretation for multi-class classification
+
+Key Concepts:
+* Decision trees learn tree structure (not weights/biases like regression)
+* Root node selection based on lowest Gini index
+* Trees work through if-else conditions & thresholding
+* Can handle missing data & perform feature selection
+* Pruning techniques prevent overfitting
+
+Action Items:
+Students: Read about Entropy & Information Gain - prepare presentation/blog post for tomorrow
+
+Tomorrow’s topics: Hyperparameter tuning, feature importance visualization, Gini value analysis
+Materials: Code & notebooks will be uploaded to GitHub (repository issue will be fixed)
+**********************************************
+
