@@ -26,3 +26,19 @@ Tomorrow’s topics: Hyperparameter tuning, feature importance visualization, Gi
 Materials: Code & notebooks will be uploaded to GitHub (repository issue will be fixed)
 **********************************************
 
+👉 Go for Logistic Regression when:
+
+✔ Data is mostly linear
+✔ You want probability output
+✔ Features are not strongly interacting
+✔ You want a simple, interpretable model
+✔ Dataset is small and clean
+
+👉 Go for Decision Tree when:
+
+✔ Data is non-linear
+✔ Variables interact in complex ways
+✔ Dataset has categorical features
+✔ You want if-else style explanations
+✔ You want flexibility without assumptions
+*************************************************
