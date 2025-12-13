@@ -15,7 +15,7 @@ auto_df = pd.read_csv("../DataSet/Automobile_data.csv")
 
 print("Data loaded to the Pandas Dataframe scuccessfully")
 
-#check for Numeric values in the dataframe and convert to Nuric wherever possible
+#check for Numeric values in the dataframe and convert to Numeric wherever possible
 for column in auto_df.columns:    
     if convert_to_numeric(auto_df[column]):
       auto_df[column] = pd.to_numeric(auto_df[column])

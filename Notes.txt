@@ -42,3 +42,8 @@ Materials: Code & notebooks will be uploaded to GitHub (repository issue will be
 ✔ You want if-else style explanations
 ✔ You want flexibility without assumptions
 *************************************************
+13/Dec/2025:
+
+Bias - Errors that are caused by overly simple assumptions 
+Variance - Change in my training data how it changes my model itself..
+Bias Vs Variance - https://youtu.be/EuBBz3bI-aA?si=62t5NH1xH5cI3DXn
