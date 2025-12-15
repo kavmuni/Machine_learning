@@ -160,7 +160,9 @@ print(f"Depth of the decision tree: {depth}")
 
 # find Gini importance of each feature
 importances = dt_estimator.feature_importances_
+print(importances)
 feature_names = preprocessor.get_feature_names_out()
+print(feature_names)
 feature_importances = sorted(zip(feature_names, importances), key=lambda x: x[1], reverse=True)
 print("Feature importances (Gini importance):")
 for feature, importance in feature_importances:

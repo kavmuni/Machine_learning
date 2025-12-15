@@ -47,3 +47,157 @@ Materials: Code & notebooks will be uploaded to GitHub (repository issue will be
 Bias - Errors that are caused by overly simple assumptions 
 Variance - Change in my training data how it changes my model itself..
 Bias Vs Variance - https://youtu.be/EuBBz3bI-aA?si=62t5NH1xH5cI3DXn
+
+Sure 👍 Let’s use a very small, concrete example so it’s easy to see why random features without random data still give similar trees.
+
+
+---
+
+Example dataset
+
+Assume we want to predict Approval (Yes / No)
+
+ID	Age	Income	CreditScore	Approved
+
+1	25	Low	600	No
+2	28	Low	620	No
+3	35	Medium	700	Yes
+4	40	Medium	720	Yes
+5	45	High	750	Yes
+6	50	High	780	Yes
+
+
+📌 Important:
+CreditScore is the strongest feature
+
+
+---
+
+Case 1️⃣: Same data + random features only
+
+Let’s say at each split we randomly select 2 features out of 3
+
+Tree 1
+
+Root features chosen: {Age, CreditScore}
+
+Best split → CreditScore > 680
+
+
+CreditScore > 680
+         /           \
+       No             Yes
+
+Tree 2
+
+Root features chosen: {Income, CreditScore}
+
+Best split → CreditScore > 680
+
+
+CreditScore > 680
+         /           \
+       No             Yes
+
+Tree 3
+
+Root features chosen: {Age, Income}
+
+Best split → Age > 30
+
+
+Age > 30
+         /        \
+       No          Yes
+
+Observation
+
+Most trees split on CreditScore
+
+Even Tree 3 behaves similarly
+
+Predictions are almost identical
+
+
+➡️ Trees are highly correlated
+
+
+---
+
+Case 2️⃣: Random data + random features (True Random Forest)
+
+Each tree sees different rows (bootstrap sample)
+
+Tree 1 data sample
+
+[1, 2, 3, 4, 4, 5] (with replacement)
+
+Best split → Age > 32
+
+
+Tree 2 data sample
+
+[2, 3, 5, 6, 6, 6]
+
+Best split → CreditScore > 730
+
+
+Tree 3 data sample
+
+[1, 1, 2, 3, 4, 6]
+
+Best split → Income = High
+
+
+Trees now look different
+
+Tree 1: Age based
+Tree 2: CreditScore based
+Tree 3: Income based
+
+➡️ Low correlation + better ensemble
+
+
+---
+
+Why randomness in data matters most
+
+Same data ⇒ same dominant patterns
+Random data ⇒ patterns shift slightly per tree
+
+This forces trees to learn different rules
+
+
+---
+
+Simple analogy 🧠
+
+Same data + random features
+→ Same textbook, different highlighters
+
+Random data + random features
+→ Different textbooks, different highlighters
+
+
+
+---
+
+One-line conclusion (important)
+
+> Random features alone create small differences, but random data is what truly decorrelates trees.
+
+
+
+If you want, I can also show:
+
+What happens numerically (variance reduction)
+
+Or how ExtraTrees differ from Random Forest
+-------------------------------
+Bootstrapping intentionally allows duplicates
+
+Duplicates affect only that one sample
+
+Final result = average of many samples
+
+Hence no bias toward any specific value
