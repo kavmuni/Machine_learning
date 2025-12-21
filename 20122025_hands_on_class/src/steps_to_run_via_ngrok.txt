@@ -1,0 +1,12 @@
+!pip install pyngrok
+#step-1
+https://dashboard.ngrok.com/get-started/your-authtoken
+
+#step-2
+!pip install pyngrok
+
+#step-3
+!ngrok authtoken  …...
+
+#step-4
+!streamlit run webview.py & ngrok http 8501 --log stdout
