@@ -1,0 +1,40 @@
+2026-02-01 09:11:32 From Inceptez Technologies to Everyone:
+	    #model = LogisticRegression(penalty='l2', solver='lbfgs',max_iter=90)
+	    model = LogisticRegression(penalty='l1',solver='saga',max_iter=50)
+	
+2026-02-01 09:15:01 From Sundar B to Everyone:
+	https://colab.research.google.com/drive/1C0WXhdwGwyLR10A34llVNgTdNTwKwWip?usp=sharing
+	
+2026-02-01 09:17:04 From Inceptez Technologies to Everyone:
+	https://dashboard.ngrok.com/
+	
+2026-02-01 09:48:01 From Inceptez Technologies to Everyone:
+	import getpass
+	ngrok_token = getpass.getpass("Please enter your ngrok token: ")
+	get_ipython().system_raw(f'ngrok authtoken {ngrok_token}')
+	print('Ngrok has been setup')
+	
+2026-02-01 10:12:24 From Sathyan Asokan Geethpriya to Everyone:
+	will retry after killing session
+	
+2026-02-01 11:23:59 From Sundar B to Everyone:
+	https://disappointed-robeless-katheleen.ngrok-free.dev/invocations
+	
+2026-02-01 11:24:43 From Bineetha Gopinathan to Everyone:
+	https://alvina-chiffonade-premeditatedly.ngrok-free.dev/invocations
+	
+2026-02-01 11:26:04 From Nataraj to Everyone:
+	https://nonimperial-superobstinately-trey.ngrok-free.dev/invocations
+	
+2026-02-01 11:37:44 From Muniappan Mohanraj to Everyone:
+	https://viably-subchorioid-amir.ngrok-free.dev/invocations
+	
+2026-02-01 11:51:56 From Inceptez Technologies to Everyone:
+	mytestdata.json
+	
+2026-02-01 11:52:19 From Inceptez Technologies to Everyone:
+	curl "https://alvina-chiffonade-premeditatedly.ngrok-free.dev/invocations"  -H "Content-Type:application/json" --data @/content/mytestdata.json
+	
+2026-02-01 11:59:36 From Muniappan Mohanraj to Everyone:
+	{40CA99AE-5D2C-4079-8160-B9953320E621}.png
+	
