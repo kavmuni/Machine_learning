@@ -1,0 +1,79 @@
+#loading the libraries
+import numpy as np
+import pandas as pd
+
+# load neural network libraries
+from keras.models import Sequential
+from keras.layers import Dense, Input
+
+#set random
+import keras
+keras.utils.set_random_seed(7)
+
+# loadthe data
+url = "https://raw.githubusercontent.com/ziafaq/genai/refs/heads/main/diabetes.csv"
+
+df = pd.read_csv(url,header=None)
+
+# show few records
+df.head()
+
+# create model in a function
+def create_model():
+  # create the model
+  model = Sequential()
+
+  # add input layer
+  model.add(Input(shape=(8,)))
+
+  # add hidden layer
+  model.add(Dense(2, activation='relu'))
+
+  # output layer
+  # for classification use 'sigmoid' as the activation function 0 1
+  # for regression use 'linear' (default)
+  model.add(Dense(1, activation='sigmoid'))
+
+  # regression = 'mse'
+  # classification 'binary loss' # binary_crossentopy (loss/diff b/w actual/predicted)
+  model.compile(optimizer='adam', metrics=['accuracy'], loss='binary_crossentropy')
+  
+  return model
+
+# train test split
+display(df)
+X = df.iloc[:,0:8]
+Y = df.iloc[:,8]
+
+!pip install scikeras
+
+from scikeras.wrappers import KerasClassifier
+
+# # create the model
+model = KerasClassifier(model=create_model)
+
+batch_size = [10]
+epochs = [1]
+param_grid = dict(batch_size=batch_size, epochs=epochs)
+
+from sklearn.model_selection import GridSearchCV
+
+grid = GridSearchCV(estimator=model,param_grid=param_grid)
+
+grid_result = grid.fit(X,Y)
+
+import sklearn
+sklearn.__version__
+
+!pip install scikit-learn==1.4.2
+# re-run all the previous cells again
+
+print(grid_result.best_score_, grid_result.best_params_)
+
+res = pd.DataFrame(columns=['score','params'])
+res
+
+res.loc[len(res)]= {'score':grid_result.best_score_, 'params':grid_result.best_params_}
+res
+
+
