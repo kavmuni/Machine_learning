@@ -1,0 +1,83 @@
+# Prediction using Neural Networks
+
+# load the libraries
+
+import pandas as pd
+import numpy as np
+
+
+# capture the data
+url = "https://raw.githubusercontent.com/ziafaq/genai/refs/heads/main/xy_data.csv"
+
+#load the data
+df = pd.read_csv(url)
+
+#display few records
+df.tail()
+
+df.shape
+
+df.info()
+
+# train,validation splitting of data w/o using any library
+
+x = df['x']
+y = df['y']
+train_size = 80
+
+# slicing 
+# split rows[first 80 rows]
+x_train, y_train = x[:train_size], y[:train_size] 
+
+# split rows[remaining 20 rows]
+x_val, y_val = x[train_size:], y[train_size:] 
+
+print(len(x_train), len(y_train), len(x_val), len(y_val))
+
+from keras.models import Sequential
+from keras.layers import Dense, Input
+
+# define the model
+model = Sequential() # stacking of layers
+
+# input 1 column
+model.add(Input(shape=(1,))) # add input layer to the model
+
+# best activation function -> to convert linear to non-linear = 'relu'
+# no.of.neurons = 10
+model.add(Dense(10, activation='relu')) # add one hidden layer
+
+#model.add(Dense(4, activation='relu')) # add one hidden layer
+
+#no. of output column = 1
+model.add(Dense(1)) # add an output layer 
+
+# (Dense = interconnected neurons)
+# Regression o/p will continuous numerical values
+# Classification o/p (binary/multi-class)
+
+model.summary()
+
+'''
+# calculation for no.params
+col = model.add(Input(shape=(1,))) = 1 *10 neu +10b = 10+10
+# 1-col* 10-neu + 10b = 1*10 + 10 = 20 
+
+10 p.neu * 1cn + cb = 10 = 10+1 1= 11
+# 10-pn *1n + 1b = 10*1 = 11
+
+10 p.neu * 1cn + cb = 10 = 10+1 1= 11
+# 10-pn *1n + 1b = 10*1 = 11
+
+20+11 = 31
+'''
+
+!pip install keras_visualizer
+
+import keras_visualizer
+
+keras_visualizer.visualizer(model,file_name='mygraph2',file_format='png')
+
+from IPython.display import Image, display
+
+display(Image('mygraph.png'))
