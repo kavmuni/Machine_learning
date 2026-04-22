@@ -1,0 +1,65 @@
+# QUICK START - Product Recommendation Engine
+
+## 🚀 Start in 30 Seconds
+
+### Step 1: Open Command Prompt #1
+```
+cd C:\Users\muralidharan\PycharmProjects\zero-to-genai-engineer\01_text_to_numbers\Product_recommendation\backend
+python -m uvicorn main:app --reload --port 8000
+```
+✅ Wait for: `[OK] All models ready - recommender is live!`
+
+### Step 2: Open Command Prompt #2
+```
+cd C:\Users\muralidharan\PycharmProjects\zero-to-genai-engineer\01_text_to_numbers\Product_recommendation\frontend
+npm run dev
+```
+✅ Wait for: `Local: http://localhost:3000/`
+
+### Step 3: Open Browser
+```
+http://localhost:3000
+```
+
+---
+
+## 🎯 Using the App
+
+1. **Select a product** from the dropdown
+2. **Click "Recommend"** or **"Compare All"**
+3. **View results** with similarity scores
+
+---
+
+## 🐛 Quick Fixes
+
+| Issue | Fix |
+|-------|-----|
+| Port 8000 busy | `taskkill /F /IM python.exe` |
+| Port 3000 busy | `taskkill /F /IM node.exe` |
+| No products showing | Restart backend |
+| "Request Failed" | Check http://localhost:8000/health |
+| Need new npm install | `cd frontend && npm install --legacy-peer-deps` |
+
+---
+
+## 📍 Key URLs
+
+| Component | URL | Purpose |
+|-----------|-----|---------|
+| Frontend | http://localhost:3000 | Main app |
+| API Docs | http://localhost:8000/docs | Interactive testing |
+| Health | http://localhost:8000/health | Check backend |
+
+---
+
+## ✅ What Was Fixed
+
+- **Field names**: `name` → `title` in API response
+- **Windows compatibility**: Removed emoji characters
+- **API endpoint**: `/movies` → `/products`
+- **Frontend variables**: Updated to use "product" instead of "movie"
+
+---
+
+Done! Your app is ready to use. 🎉
