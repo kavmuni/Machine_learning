@@ -1,0 +1,61 @@
+Here is the summary of the meeting transcript, with corrected transcription errors and preserved technical terms.
+
+### **Meeting Summary: GEN AI Batch Discussion**
+**Date:** April 26, 2026
+**Key Participants:** Mohamed Noordeen (Instructor), Lakshimi Barathy, Bhagya Ganisetti, Akash Balmiki, Bineetha Gooinathan, Divya Dharshini.
+
+#### **1. Evolution of GPT Models & Mitigation of Issues**
+*   **GPT-1 to GPT-2:** The primary disadvantage of GPT-1 was its tendency to memorize and regurgitate answers rather than generate coherent text. This was mitigated in GPT-2 by increasing the parameter count and training on larger, more diverse datasets, allowing for better generalization.
+*   **GPT-2 to GPT-3:** GPT-2 had limitations in context length and reasoning capabilities. GPT-3 resolved this by significantly scaling up parameters (to 175B+) and using massive web-scale data, enabling few-shot learning and better logical reasoning.
+
+#### **2. Model Selection Criteria: Transformer Architecture**
+*   **Lakshimi’s Question:** How does transformer architecture influence the selection of an LLM for a specific use case?
+*   **Mohamed’s Answer:**
+    *   **Encoder-only models:** Best for understanding-heavy tasks like classification, retrieval, or sentiment analysis.
+    *   **Decoder-only models:** Best for generative tasks like text generation, reasoning, or agent-based workflows.
+    *   **Key Architectural Factors to Evaluate:**
+        *   Context length (e.g., 400K vs. 1M tokens).
+        *   Attention efficiency and latency.
+        *   Parameter size and design (Dense vs. Mixture of Experts [MoE]).
+        *   Fine-tuning options to match cost/performance requirements.
+
+#### **3. Why Use Older/Smaller Models?**
+*   **Bhagya’s Question:** Why do platforms still offer older or smaller models (e.g., GPT-4 vs. GPT-5.5) if newer ones are available?
+*   **Mohamed’s Answer:**
+    *   **Cost:** Newer flagship models are significantly more expensive. For example, GPT-5.5 might cost $5 per million input tokens, while older models like GPT-4 or GPT-4-mini might cost 50% less or even 75% less.
+    *   **Use Case Fit:** Not all tasks require the highest accuracy. Cost-effective models are sufficient for simpler tasks.
+    *   **Data Cutoff:** Newer models have more recent training data cutoffs (e.g., April 2026), while older models lack recent real-time information.
+    *   **Context Window:** Newer models often support larger context windows (e.g., 1M tokens vs. 128K in older models).
+
+#### **4. Security & Compliance Concerns**
+*   **Akash’s Question:** Are there security risks in using older models?
+*   **Mohamed’s Answer:**
+    *   **Compliance:** Newer models are more likely to comply with regulations like HIPAA or GDPR. Older models may lack these safeguards.
+    *   **Responsibility:** The developer is responsible for data privacy. You must implement **guardrails** to ensure PII (Personally Identifiable Information) or sensitive data is not sent to the API.
+    *   **Mitigation:** Filter inputs before sending to the LLM and check outputs to ensure no sensitive data is leaked back to the user.
+
+#### **5. Use Cases for "Janani" (AI Platform)**
+*   **Mohamed’s Overview:** Janani AI can be applied to various business problems:
+    *   **Customer Feedback Analysis:** Analyzing thousands of reviews to identify pain points.
+    *   **Recommendation Engines:** Enhancing search and product recommendations.
+    *   **Q&A Systems:** Answering questions from internal GBs of documentation.
+    *   **Classification:** Classifying images, audio transcripts (e.g., customer care calls to detect tone/anger), or text.
+    *   **Banking Transaction Classification:** Using few-shot prompting to classify free-text transaction descriptions.
+
+#### **6. LLM vs. Traditional Machine Learning for Classification**
+*   **Bineetha’s Question:** Should we use an LLM or a traditional ML model for classifying banking transactions?
+*   **Mohamed’s Answer:**
+    *   **Traditional ML (Supervised Learning):** Cheaper, faster to train, and lower latency. Better if you have a large, labeled dataset and the task is straightforward.
+    *   **LLM:** More expensive, higher latency, but requires less labeled data (can use few-shot prompting). Better for complex, nuanced, or unstructured data where traditional ML would take weeks/months to develop.
+    *   **Recommendation:** Justify the need for an LLM. If the task is simple classification, use traditional ML. If it requires understanding context or lacks labeled data, use an LLM (after getting security approval).
+
+#### **7. Technical Q&A: Handling Image Data in React**
+*   **Divya’s Question:** The dataset provides product images as Base64 bytes. How should this be handled in a React frontend?
+*   **Mohamed’s Advice:**
+    *   **Option 1 (Not Recommended):** Pass the entire Base64 string over the API. This increases payload size and latency.
+    *   **Option 2 (Recommended):** Pass only the **Product ID** from the backend API. On the frontend, map the Product ID to the local CSV/file to retrieve the Base64 string or image URL and display it. This is more efficient.
+
+#### **8. Administrative Notes**
+*   **N8N:** Not covered in this technical batch as it is a no-code automation tool for non-technical users. Technical users will use LangGraph or similar coding frameworks.
+*   **Assignments:** Week 1 assignment is complete. Next week will focus on practical LLM usage, tokenization, and BPE (Byte Pair Encoding).
+*   **Resources:** Paper links and context length details will be shared via GitHub.
