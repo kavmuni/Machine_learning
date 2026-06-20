@@ -1,0 +1,52 @@
+{
+  "predict.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Answer a multiple-choice science question by ranking the options.",
+      "fields": [
+        {
+          "prefix": "Prompt:",
+          "description": "Questions have mutiple choice answers."
+        },
+        {
+          "prefix": "Option A:",
+          "description": "Option A"
+        },
+        {
+          "prefix": "Option B:",
+          "description": "Option B"
+        },
+        {
+          "prefix": "Option C:",
+          "description": "Option C"
+        },
+        {
+          "prefix": "Option D:",
+          "description": "Option D"
+        },
+        {
+          "prefix": "Option E:",
+          "description": "Option E"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Top 3 Ranking:",
+          "description": "The top 3 most likely correct options ranked best to worst, as a comma-separated list of letters, e.g. 'A,C,E'"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

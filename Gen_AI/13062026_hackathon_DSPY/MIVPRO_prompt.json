@@ -1,0 +1,80 @@
+{
+  "predict.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "prompt": "Which of the following statements accurately describes the dimension of an object in a CW complex?",
+        "option_a": "The dimension of an object in a CW complex is the largest n for which the n-skeleton is nontrivial, where the empty set is considered to have dimension -1 and the boundary of a discrete set of points is the empty set.",
+        "option_b": "The dimension of an object in a CW complex is determined by the number of critical points the object contains. The boundary of a discrete set of points is considered to have dimension 1, while the empty set is given a dimension of 0.",
+        "option_c": "The dimension of an object in a CW complex is the smallest n for which the n-skeleton is nontrivial. The empty set is given a dimension of -1, while the boundary of a discrete set of points is assigned a dimension of 0.",
+        "option_d": "The dimension of an object in a CW complex is calculated by counting the number of cells of all dimensions in the object. The empty set is given a dimension of 0, while the boundary of a discrete set of points is assigned a dimension of -1.",
+        "option_e": "The dimension of an object in a CW complex depends on the number of singularities in the object. The empty set and the boundary of a discrete set of points are both assigned a dimension of 0.",
+        "answer": "A"
+      },
+      {
+        "prompt": "What is the role of axioms in a formal theory?",
+        "option_a": "Basis statements called axioms form the foundation of a formal theory and, together with the deducing rules, help in deriving a set of statements called theorems using proof theory.",
+        "option_b": "Axioms are supplementary statements added to a formal theory that break down otherwise complex statements into more simple ones.",
+        "option_c": "Axioms are redundant statements that can be derived from other statements in a formal theory, providing additional perspective to theorems derived from the theory.",
+        "option_d": "The axioms in a theory are used for experimental validation of the theorems derived from the statements in the theory.",
+        "option_e": "The axioms in a formal theory are added to prove that the statements derived from the theory are true, irrespective of their validity in the real world.",
+        "answer": "A"
+      },
+      {
+        "prompt": "Which of the following statements accurately describes the impact of Modified Newtonian Dynamics (MOND) on the observed \"missing baryonic mass\" discrepancy in galaxy clusters?",
+        "option_a": "MOND is a theory that reduces the observed missing baryonic mass in galaxy clusters by postulating the existence of a new form of matter called \"fuzzy dark matter.\"",
+        "option_b": "MOND is a theory that increases the discrepancy between the observed missing baryonic mass in galaxy clusters and the measured velocity dispersions from a factor of around 10 to a factor of about 20.",
+        "option_c": "MOND is a theory that explains the missing baryonic mass in galaxy clusters that was previously considered dark matter by demonstrating that the mass is in the form of neutrinos and axions.",
+        "option_d": "MOND is a theory that reduces the discrepancy between the observed missing baryonic mass in galaxy clusters and the measured velocity dispersions from a factor of around 10 to a factor of about 2.",
+        "option_e": "MOND is a theory that eliminates the observed missing baryonic mass in galaxy clusters by imposing a new mathematical formulation of gravity that does not require the existence of dark matter.",
+        "answer": "D"
+      }
+    ],
+    "signature": {
+      "instructions": "To better solve the task of answering multiple-choice science questions by ranking the options, we propose the following instruction:\n\n\"Given a prompt that presents a scientific or mathematical question, identify the correct answer along with detailed reasoning. Rank the top three options from most likely to least likely. Ensure your reasoning clearly explains the thought process behind each ranking.",
+      "fields": [
+        {
+          "prefix": "Prompt:",
+          "description": "The science question"
+        },
+        {
+          "prefix": "Option A:",
+          "description": "${option_a}"
+        },
+        {
+          "prefix": "Option B:",
+          "description": "${option_b}"
+        },
+        {
+          "prefix": "Option C:",
+          "description": "${option_c}"
+        },
+        {
+          "prefix": "Option D:",
+          "description": "${option_d}"
+        },
+        {
+          "prefix": "Option E:",
+          "description": "${option_e}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Top 3 Ranking:",
+          "description": "Top 3 options ranked best to worst, comma-separated letters, e.g. 'A,C,E'"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

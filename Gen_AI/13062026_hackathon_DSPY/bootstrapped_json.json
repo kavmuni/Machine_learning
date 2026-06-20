@@ -1,0 +1,205 @@
+{
+  "predict.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "prompt": "Which of the following statements accurately describes the impact of Modified Newtonian Dynamics (MOND) on the observed \"missing baryonic mass\" discrepancy in galaxy clusters?",
+        "option_a": "MOND is a theory that reduces the observed missing baryonic mass in galaxy clusters by postulating the existence of a new form of matter called \"fuzzy dark matter.\"",
+        "option_b": "MOND is a theory that increases the discrepancy between the observed missing baryonic mass in galaxy clusters and the measured velocity dispersions from a factor of around 10 to a factor of about 20.",
+        "option_c": "MOND is a theory that explains the missing baryonic mass in galaxy clusters that was previously considered dark matter by demonstrating that the mass is in the form of neutrinos and axions.",
+        "option_d": "MOND is a theory that reduces the discrepancy between the observed missing baryonic mass in galaxy clusters and the measured velocity dispersions from a factor of around 10 to a factor of about 2.",
+        "option_e": "MOND is a theory that eliminates the observed missing baryonic mass in galaxy clusters by imposing a new mathematical formulation of gravity that does not require the existence of dark matter.",
+        "reasoning": "Modified Newtonian Dynamics (MOND) is a theoretical framework proposed as an alternative to dark matter. It aims to explain the observed discrepancies in the rotational curves of galaxies and the dynamics of galaxy clusters without invoking the existence of dark matter. MOND modifies Newton's law of gravity at low accelerations to fit the observed phenomena. Considering the given options, MOND does indeed attempt to address the missing mass problem, but it does so by modifying gravity rather than positing new forms of matter. Among the provided choices, the statement that MOND reduces the discrepancy between the observed missing baryonic mass in galaxy clusters and the measured velocity dispersions from a significant factor to a smaller one aligns most closely with the general goal of MOND to explain observed phenomena without dark matter. However, it's crucial to understand that MOND's application and success in fully resolving the \"missing baryonic mass\" issue in galaxy clusters are subjects of ongoing research and debate.",
+        "top3_ranking": "D, E, B"
+      },
+      {
+        "augmented": true,
+        "prompt": "Which of the following is an accurate definition of dynamic scaling in self-similar systems?",
+        "option_a": "Dynamic scaling refers to the evolution of self-similar systems, where data obtained from snapshots at fixed times exhibits similarity to the respective data taken from snapshots of any earlier or later time. This similarity is tested by a certain time-dependent stochastic variable x.",
+        "option_b": "Dynamic scaling refers to the non-evolution of self-similar systems, where data obtained from snapshots at fixed times is similar to the respective data taken from snapshots of any earlier or later time. This similarity is tested by a certain time-dependent stochastic variable x.",
+        "option_c": "Dynamic scaling refers to the evolution of self-similar systems, where data obtained from snapshots at fixed times is dissimilar to the respective data taken from snapshots of any earlier or later time. This dissimilarity is tested by a certain time-independent stochastic variable y.",
+        "option_d": "Dynamic scaling refers to the non-evolution of self-similar systems, where data obtained from snapshots at fixed times is dissimilar to the respective data taken from snapshots of any earlier or later time. This dissimilarity is tested by a certain time-independent stochastic variable y.",
+        "option_e": "Dynamic scaling refers to the evolution of self-similar systems, where data obtained from snapshots at fixed times is independent of the respective data taken from snapshots of any earlier or later time. This independence is tested by a certain time-dependent stochastic variable z.",
+        "reasoning": "The definition of dynamic scaling in self-similar systems involves the evolution of these systems over time, where data obtained at different times exhibits similarity. This rules out options that mention non-evolution or dissimilarity over time. The correct definition should also involve a time-dependent variable, as dynamic scaling is concerned with how systems change over time. Option A is the only one that accurately describes dynamic scaling as involving the evolution of self-similar systems with similarity tested by a time-dependent stochastic variable.",
+        "top3_ranking": "A"
+      },
+      {
+        "augmented": true,
+        "prompt": "Which of the following statements accurately describes the origin and significance of the triskeles symbol?",
+        "option_a": "The triskeles symbol was reconstructed as a feminine divine triad by the rulers of Syracuse, and later adopted as an emblem. Its usage may also be related to the Greek name of Sicily, Trinacria, which means \"having three headlands.\" The head of Medusa at the center of the Sicilian triskeles represents the three headlands.",
+        "option_b": "The triskeles symbol is a representation of three interlinked spirals, which was adopted as an emblem by the rulers of Syracuse. Its usage in modern flags of Sicily has its origins in the ancient Greek name for the island, Trinacria, which means \"Sicily with three corners.\" The head of Medusa at the center is a representation of the island's rich cultural heritage.",
+        "option_c": "The triskeles symbol is a representation of a triple goddess, reconstructed by the rulers of Syracuse, who adopted it as an emblem. Its significance lies in the fact that it represents the Greek name for Sicily, Trinacria, which contains the element \"tria,\" meaning three. The head of Medusa at the center of the Sicilian triskeles represents the three headlands.",
+        "option_d": "The triskeles symbol represents three interlocked spiral arms, which became an emblem for the rulers of Syracuse. Its usage in modern flags of Sicily is due to the island's rich cultural heritage, which dates back to ancient times. The head of Medusa at the center represents the lasting influence of Greek mythology on Sicilian culture.",
+        "option_e": "The triskeles symbol is a representation of the Greek goddess Hecate, reconstructed by the rulers of Syracuse. Its adoption as an emblem was due to its cultural significance, as it represented the ancient Greek name for Sicily, Trinacria. The head of Medusa at the center of the Sicilian triskeles represents the island's central location in the Mediterranean.",
+        "reasoning": "The triskeles symbol, also known as the triskelion, has its origins in ancient Greek and Celtic cultures, often representing a triple goddess or a symbol of three interconnected elements. In the context of Sicily, the triskeles symbol has been associated with the island's Greek name, Trinacria, which refers to its three headlands. The depiction of the head of Medusa at the center of the Sicilian triskeles may symbolize the island's rich cultural heritage or its connection to Greek mythology. Given these points, the most accurate description should involve the symbol's connection to the Greek name for Sicily, its possible representation of a triple goddess or three interconnected elements, and the significance of the Medusa head in the context of Sicilian culture and history.",
+        "top3_ranking": "C, A, D"
+      },
+      {
+        "augmented": true,
+        "prompt": "What is the significance of regularization in terms of renormalization problems in physics?",
+        "option_a": "Regularizing the mass-energy of an electron with a finite radius can theoretically simplify calculations involving infinities or singularities, thereby providing explanations that would otherwise be impossible to achieve.",
+        "option_b": "Regularizing the mass-energy of an electron with an infinite radius allows for the breakdown of a theory that is valid under one set of conditions. This approach can be applied to other renormalization problems as well.",
+        "option_c": "Regularizing the mass-energy of an electron with a finite radius is a means of demonstrating that a system below a certain size can be explained without the need for further calculations. This approach can be applied to other renormalization problems as well.",
+        "option_d": "Regularizing the mass-energy of an electron with an infinite radius can be used to provide a highly accurate description of a system under specific conditions. This approach can be transferred to other renormalization problems as well.",
+        "option_e": "Regularizing the mass-energy of an electron with an infinite radius is essential for explaining how a system below a certain size operates. This approach can be applied to other renormalization problems as well.",
+        "reasoning": "The question requires an understanding of regularization in the context of renormalization problems in physics, particularly in relation to the electron's mass-energy. Regularization is a method used to deal with infinities or singularities in physical theories, and in the context of the electron, it involves assigning a finite radius to the electron to simplify calculations. Option A is the most plausible answer because it correctly identifies the purpose of regularization in simplifying calculations involving infinities or singularities. Options B, D, and E are incorrect because they mention an infinite radius, which would exacerbate the problem of infinities or singularities rather than resolving it. Option C is partially correct in stating that regularization can be applied to other renormalization problems, but it does not accurately describe the significance of regularization in the context of the electron's mass-energy.",
+        "top3_ranking": "A, C, B"
+      },
+      {
+        "prompt": "What is Minkowski space?",
+        "A": "Minkowski space is a physical space where objects move in a straight line unless acted upon by a force.",
+        "B": "Minkowski space is a mathematical model that combines inertial space and time manifolds with a non-inertial reference frame of space and time into a four-dimensional model relating a position to the field.",
+        "C": "Minkowski space is a mathematical model that combines space and time into a two-dimensional model relating a position to the field.",
+        "D": "Minkowski space is a mathematical model that combines space and time into a three-dimensional model relating a position to the field.",
+        "E": "Minkowski space is a physical space where objects move in a curved line unless acted upon by a force.",
+        "answer": "B"
+      },
+      {
+        "prompt": "What is the relationship between mass, force, and acceleration, according to Sir Isaac Newton's laws of motion?",
+        "A": "Mass is a property that determines the weight of an object. According to Newton's laws of motion and the formula F = ma, an object with a mass of one kilogram accelerates at one meter per second per second when acted upon by a force of one newton.",
+        "B": "Mass is an inertial property that determines an object's tendency to remain at constant velocity unless acted upon by an outside force. According to Newton's laws of motion and the formula F = ma, an object with a mass of one kilogram accelerates at ten meters per second per second when acted upon by a force of one newton.",
+        "C": "Mass is an inertial property that determines an object's tendency to remain at constant velocity unless acted upon by an outside force. According to Newton's laws of motion and the formula F = ma, an object with a mass of one kilogram accelerates at ten meters per second per second when acted upon by a force of ten newtons.",
+        "D": "Mass is an inertial property that determines an object's tendency to remain at constant velocity unless acted upon by an outside force. According to Newton's laws of motion and the formula F = ma, an object with a mass of one kilogram accelerates at one meter per second per second when acted upon by a force of one newton.",
+        "E": "Mass is a property that determines the size of an object. According to Newton's laws of motion and the formula F = ma, an object with a mass of one kilogram accelerates at one meter per second per second when acted upon by a force of ten newtons.",
+        "answer": "D"
+      },
+      {
+        "prompt": "What is the purpose of obtaining surgical resection specimens?",
+        "A": "To remove an entire diseased area or organ for definitive surgical treatment of a disease, with pathological analysis of the specimen used to confirm the diagnosis.",
+        "B": "To perform visual and microscopic tests on tissue samples using automated analysers and cultures.",
+        "C": "To work in close collaboration with medical technologists and hospital administrations.",
+        "D": "To administer a variety of tests of the biophysical properties of tissue samples.",
+        "E": "To obtain bodily fluids such as blood and urine for laboratory analysis of disease diagnosis.",
+        "answer": "A"
+      },
+      {
+        "prompt": "What is the interstellar medium (ISM)?",
+        "A": "The matter and radiation that exist in the space between the star systems in a galaxy, including gas in ionic, atomic, and molecular form, as well as dust and cosmic rays. It fills interstellar space and blends smoothly into the surrounding intergalactic space.",
+        "B": "The matter and radiation that exist in the space between stars in a galaxy, including gas in ionic, atomic, and molecular form, as well as dust and cosmic rays. It fills interstellar space and blends smoothly into the surrounding interplanetary space.",
+        "C": "The matter and radiation that exist in the space between galaxies, including gas in ionic, atomic, and molecular form, as well as dust and cosmic rays. It fills intergalactic space and blends smoothly into the surrounding interstellar space.",
+        "D": "The matter and radiation that exist in the space between planets in a solar system, including gas in ionic, atomic, and molecular form, as well as dust and cosmic rays. It fills interplanetary space and blends smoothly into the surrounding interstellar space.",
+        "E": "The matter and radiation that exist within a star, including gas in ionic, atomic, and molecular form, as well as dust and cosmic rays. It fills the star and blends smoothly into the surrounding interstellar space.",
+        "answer": "A"
+      },
+      {
+        "prompt": "What is a transient condensation cloud, also known as a Wilson cloud?",
+        "A": "A visible cloud of smoke that forms when a nuclear weapon or a large amount of a conventional explosive is detonated in humid air, due to the burning of materials in the explosion.",
+        "B": "A visible cloud of microscopic water droplets that forms when a nuclear weapon or a large amount of a conventional explosive is detonated in humid air, due to a temporary cooling of the air caused by a rarefaction of the air surrounding the explosion.",
+        "C": "A visible cloud of microscopic water droplets that forms when a nuclear weapon or a large amount of a conventional explosive is detonated in dry air, due to a temporary cooling of the air caused by a rarefaction of the air surrounding the explosion.",
+        "D": "A visible cloud of gas that forms when a nuclear weapon or a large amount of a conventional explosive is detonated in humid air, due to the release of gases from the explosion.",
+        "E": "A visible cloud of smoke that forms when a nuclear weapon or a large amount of a conventional explosive is detonated in dry air, due to the burning of materials in the explosion.",
+        "answer": "B"
+      },
+      {
+        "prompt": "What was the aim of the Gravity Probe B (GP-B) mission?",
+        "A": "To prove that pressure contributes equally to spacetime curvature as does mass-energy.",
+        "B": "To measure spacetime curvature near Earth, with particular emphasis on gravitomagnetism.",
+        "C": "To measure the distribution of Fe and Al on the Moon's surface.",
+        "D": "To confirm the relatively large geodetic effect due to simple spacetime curvature, and is also known as de Sitter precession.",
+        "E": "To measure the discrepancy between active and passive mass to about 10−12.",
+        "answer": "B"
+      },
+      {
+        "prompt": "What is the significance of the speed of light in vacuum?",
+        "A": "The speed of light in vacuum is only relevant when measuring the one-way speed of light.",
+        "B": "The speed of light in vacuum is only relevant when measuring the two-way speed of light.",
+        "C": "The speed of light in vacuum is independent of the motion of the wave source and the observer's inertial frame of reference.",
+        "D": "The speed of light in vacuum is dependent on the motion of the wave source and the observer's inertial frame of reference.",
+        "E": "The speed of light in vacuum is only relevant when c appears explicitly in the units of measurement.",
+        "answer": "C"
+      },
+      {
+        "prompt": "What did Newton's manuscripts of the 1660s show?",
+        "A": "Newton learned about tangential motion and radially directed force or endeavour from Hooke's work.",
+        "B": "Newton's manuscripts did not show any evidence of combining tangential motion with the effects of radially directed force or endeavour.",
+        "C": "Newton combined tangential motion with the effects of radially directed force or endeavour and expressed the concept of linear inertia.",
+        "D": "Newton's manuscripts showed that he learned about the inverse square law from Hooke's private papers.",
+        "E": "Newton's manuscripts showed that he was indebted to Descartes' work, published in 1644, for the concept of linear inertia.",
+        "answer": "C"
+      },
+      {
+        "prompt": "What was Isaac Newton's explanation for rectilinear propagation of light?",
+        "A": "Isaac Newton rejected the wave theory of light and proposed that light consists of corpuscles that are subject to a force acting parallel to the interface. In this model, the critical angle was the angle of incidence at which the normal velocity of the approaching corpuscle was just enough to reach the far side of the force field; at more oblique incidence, the corpuscle would be turned back.",
+        "B": "Isaac Newton rejected the wave theory of light and proposed that light consists of corpuscles that are subject to a force acting perpendicular to the interface. In this model, the critical angle was the angle of incidence at which the normal velocity of the approaching corpuscle was just enough to reach the near side of the force field; at more oblique incidence, the corpuscle would be turned back.",
+        "C": "Isaac Newton accepted the wave theory of light and proposed that light consists of transverse waves that are subject to a force acting perpendicular to the interface. In this model, the critical angle was the angle of incidence at which the normal velocity of the approaching wave was just enough to reach the far side of the force field; at more oblique incidence, the wave would be turned back.",
+        "D": "Isaac Newton rejected the wave theory of light and proposed that light consists of corpuscles that are subject to a force acting perpendicular to the interface. In this model, the critical angle was the angle of incidence at which the normal velocity of the approaching corpuscle was just enough to reach the far side of the force field; at more oblique incidence, the corpuscle would be turned back.",
+        "E": "Isaac Newton accepted the wave theory of light and proposed that light consists of longitudinal waves that are subject to a force acting perpendicular to the interface. In this model, the critical angle was the angle of incidence at which the normal velocity of the approaching wave was just enough to reach the far side of the force field; at more oblique incidence, the wave would be turned back.",
+        "answer": "D"
+      },
+      {
+        "prompt": "What did Newton adopt after his correspondence with Hooke in 1679-1680?",
+        "A": "The language of inward or centripetal force.",
+        "B": "The language of gravitational force.",
+        "C": "The language of outward or centrifugal force.",
+        "D": "The language of tangential and radial displacements.",
+        "E": "The language of electromagnetic force.",
+        "answer": "A"
+      },
+      {
+        "prompt": "What is geometric quantization in mathematical physics?",
+        "A": "Geometric quantization is a mathematical approach to defining a classical theory corresponding to a given quantum theory. It attempts to carry out quantization in such a way that certain analogies between the quantum theory and the classical theory are lost.",
+        "B": "Geometric quantization is a mathematical approach to defining a quantum theory corresponding to a given classical theory. It attempts to carry out quantization in such a way that certain analogies between the classical theory and the quantum theory are lost.",
+        "C": "Geometric quantization is a mathematical approach to defining a classical theory corresponding to a given quantum theory. It attempts to carry out quantization in such a way that certain analogies between the quantum theory and the classical theory remain manifest.",
+        "D": "Geometric quantization is a mathematical approach to defining a quantum theory corresponding to a given classical theory. It attempts to carry out quantization in such a way that certain analogies between the classical theory and the quantum theory are not important.",
+        "E": "Geometric quantization is a mathematical approach to defining a quantum theory corresponding to a given classical theory. It attempts to carry out quantization in such a way that certain analogies between the classical theory and the quantum theory remain manifest.",
+        "answer": "E"
+      },
+      {
+        "prompt": "What is the relationship between the amplitude of a sound wave and its loudness?",
+        "A": "The amplitude of a sound wave is related to its loudness.",
+        "B": "The amplitude of a sound wave is directly proportional to its frequency.",
+        "C": "The amplitude of a sound wave is not related to its loudness.",
+        "D": "The amplitude of a sound wave is not related to its frequency.",
+        "E": "The amplitude of a sound wave is inversely related to its loudness.",
+        "answer": "A"
+      }
+    ],
+    "signature": {
+      "instructions": "Answer a multiple-choice science question by ranking the options.",
+      "fields": [
+        {
+          "prefix": "Prompt:",
+          "description": "Questions have mutiple choice answers."
+        },
+        {
+          "prefix": "Option A:",
+          "description": "Option A"
+        },
+        {
+          "prefix": "Option B:",
+          "description": "Option B"
+        },
+        {
+          "prefix": "Option C:",
+          "description": "Option C"
+        },
+        {
+          "prefix": "Option D:",
+          "description": "Option D"
+        },
+        {
+          "prefix": "Option E:",
+          "description": "Option E"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Top 3 Ranking:",
+          "description": "The top 3 most likely correct options ranked best to worst, as a comma-separated list of letters, e.g. 'A,C,E'"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}
