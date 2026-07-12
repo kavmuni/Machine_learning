@@ -174,3 +174,6 @@
 11122025_titanic_data_set_with_decision_tree/src/xgb_stumps/tree_49
 11122025_titanic_data_set_with_decision_tree/src/xgb_stumps/tree_49.jpeg
 14122025_Random_Forest_and_boosting/DataSet/creditcard.csv
+.env
+.gitignore
+.gitignore
